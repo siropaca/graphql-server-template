@@ -9,7 +9,7 @@ import type { CodegenConfig } from '@graphql-codegen/cli'
 const config: CodegenConfig = {
   schema: printSchema(schema),
   generates: {
-    '../../graphql/generated/schema.graphql': {
+    './generated/schema.graphql': {
       plugins: ['schema-ast'],
     },
   },
